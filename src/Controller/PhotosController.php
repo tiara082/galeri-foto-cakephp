@@ -23,7 +23,7 @@ public function index()
     // Ambil data foto milik user yang sedang login
     $query = $this->Photos->find()
     ->where(['Photos.user_id' => $userId])  // Menambahkan alias tabel Photos
-    ->contain(['Albums', 'Users']);
+     ->contain(['Albums', 'Users']);
     
     $photos = $this->paginate($query);
 

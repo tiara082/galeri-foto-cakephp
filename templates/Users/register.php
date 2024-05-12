@@ -10,7 +10,7 @@ $this->layout = 'CakeLte.login';
     <div class="card-body register-card-body">
         <p class="login-box-msg"><?= __('Daftar akun baru.') ?></p>
 
-        <?= $this->Form->create(null, ['url' => ['controller' => 'Users', 'action' => 'add']]) ?>
+        <?= $this->Form->create() ?>
 
         <?= $this->Form->control('nama', [
             'placeholder' => __('Nama Lengkap'),
